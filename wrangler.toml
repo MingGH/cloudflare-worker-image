@@ -1,20 +1,20 @@
-name = "image"
+name = "image-cropping"
 main = "src/index.js"
 compatibility_date = "2023-11-24"
 
-# Variable bindings. These are arbitrary, plaintext strings (similar to environment variables)
+# 变量绑定。这些是任意的纯文本字符串（类似于环境变量）
 # Note: Use secrets to store sensitive data.
 # Docs: https://developers.cloudflare.com/workers/platform/environment-variables
 # [vars]
 # MY_VARIABLE = "production_value"
 
 [vars]
-WHITE_LIST = "miantiao.me,mt.ci"
+WHITE_LIST = ""
 
-# Bind a KV Namespace. Use KV as persistent storage for small key-value pairs.
+# 绑定 KV 命名空间。将 KV 用作小型键值对的持久存储。
 # Docs: https://developers.cloudflare.com/workers/runtime-apis/kv
 # [[kv_namespaces]]
-# binding = "MY_KV_NAMESPACE"
+# binding = "IMAGE_CROPPING_KV"
 # id = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
 
 # Bind an R2 Bucket. Use R2 to store arbitrarily large blobs of data, such as files.
